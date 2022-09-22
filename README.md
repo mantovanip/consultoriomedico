@@ -3,6 +3,9 @@
 
  <h1 align="center">Cadastro de Agendamento de Consulta</h1>
 
+<h2 alingn="center">
+CRUD (acrónimo do inglês Create, Read, Update and Delete) são as quatro operações básicas (criação, consulta, atualização e destruição de dados) utilizadas em bases de dados relacionais (RDBMS) fornecidas aos utilizadores do sistema.</h2>
+
 <p align="center">Projeto PHP/MYSQL</p>
 
 
