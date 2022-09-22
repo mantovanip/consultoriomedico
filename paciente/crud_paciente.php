@@ -10,7 +10,7 @@ $email     = isset($_POST['email']) ? $_POST['email'] :'';
 $telefone1 = isset($_POST['telefone1']) ? $_POST['telefone1'] :'';
 $telefone2 = isset($_POST['telefone2']) ? $_POST['telefone2'] :'';
 $rg        = isset($_POST['rg']) ? $_POST['rg'] :'';
-$genero   = isset($_POST['genero']) ? $_POST['genero'] :'';
+$genero    = isset($_POST['genero']) ? $_POST['genero'] :'';
   
 
 if($nome ==''){

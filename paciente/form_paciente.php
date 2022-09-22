@@ -14,8 +14,8 @@
 
     <form action="crud_paciente.php" method="POST">
         <fieldset>
-            <legend class="legend" >Cadastro de Paciente</legend>
-
+            <legend class="legend">Cadastro de Paciente</legend>
+            
             <div>
                 <label for="nome_paciente">Nome Paciente</label>
                 <br>
