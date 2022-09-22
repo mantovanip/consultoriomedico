@@ -5,3 +5,4 @@ CREATE TABLE medico(
     especialidade	VARCHAR(1) NOT NULL
     
 )ENGINE = InnoDB;
+
