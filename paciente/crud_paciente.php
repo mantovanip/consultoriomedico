@@ -4,8 +4,8 @@ $endereco  = isset($_POST['endereco']) ? $_POST['endereco'] :'';
 $bairro    = isset($_POST['bairro']) ? $_POST['bairro'] :'';
 $cep       = isset($_POST['cep']) ? $_POST['cep'] :'';
 $cpf       = isset($_POST['cpf']) ? $_POST['cpf'] :'';
-$cidade    = isset($_POST['cidade']) ? $_POST['cidade'] :'';
-$estado    = isset($_POST['estado']) ? $_POST['estado'] :'';
+$cidade    = isset($_POST['cidade']) ? $_POST['cidade'] :'Criciúma';
+$estado    = isset($_POST['estado']) ? $_POST['estado'] :'SC';
 $email     = isset($_POST['email']) ? $_POST['email'] :'';
 $telefone1 = isset($_POST['telefone1']) ? $_POST['telefone1'] :'';
 $telefone2 = isset($_POST['telefone2']) ? $_POST['telefone2'] :'';
@@ -19,7 +19,30 @@ if($nome ==''){
      
      exit;
  }
-
+ if($endereco ==''){
+    echo 'O campo endereco é obrigatório  
+    <a href="#" onclick="history.back()">Voltar</a>';
+    
+    exit;
+}
+if($cpf ==''){
+    echo 'O campo CPF é obrigatório  
+    <a href="#" onclick="history.back()">Voltar</a>';
+    
+    exit;
+}
+if($cep ==''){
+    echo 'O campo CEP é obrigatório  
+    <a href="#" onclick="history.back()">Voltar</a>';
+    
+    exit;
+}
+if($telefone1 ==''){
+    echo 'O campo Telefone Celular é obrigatório  
+    <a href="#" onclick="history.back()">Voltar</a>';
+    
+    exit;
+}
  if (strlen($nome) <= 3){
      echo 'Você precisa digitar mais que 3 caracteres no campo nome. <a href="#" onclick="history.back()">Voltar</a>';
      exit;

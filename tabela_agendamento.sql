@@ -11,13 +11,13 @@ hrfinal			 TIME  NOT NULL,
     FOREIGN KEY (id_paciente)
     REFERENCES paciente(id),
     
-    CONSTRAINT  fk_medico_id
-    FOREIGN KEY (id_medico)
-    REFERENCES medico(id),
+    CONSTRAINT   fk_medico_id
+    FOREIGN KEY  (id_medico)
+    REFERENCES   medico(id),
     
     CONSTRAINT  fk_atendente_id
     FOREIGN KEY (id_atendente)
-    REFERENCES atendente(id)
+    REFERENCES  atendente(id)
     
 )ENGINE = InnoDB;
 
