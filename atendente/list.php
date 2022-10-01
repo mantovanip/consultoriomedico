@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="atendente.css">
     <title>Lista de Atendentes</title>
 </head>
+
 <body>
-    
+
     <table width="100%">
         <caption>Lista de Atendentes</caption>
         <thead>
@@ -18,30 +20,31 @@
                 <th>Editar</th>
                 <th>Excluir</th>
             </tr>
-        <thead>
-        <tbody>
-            <?php
-                $conexao    = new PDO('mysql:local=localhost;port=3306;dbname=consultoriomedico','root','');
+            <thead>
+            <tbody>
+                <?php
+                $conexao    = new PDO('mysql:local=localhost;port=3306;dbname=consultoriomedico', 'root', '');
                 $sql        = "SELECT * FROM atendente;";
                 $dataset    = $conexao->query($sql);
                 $resultset  = $dataset->fetchAll();
 
-                foreach($resultset as $row){
+                foreach ($resultset as $row) {
                     echo '
                         <tr>
-                            <td>'.$row['id'].'</td>
-                            <td>'.$row['nome'].'</td>
+                            <td>' . $row['id'] . '</td>
+                            <td>' . $row['nome'] . '</td>
                             <td align="center">
-                                <a href="form.php?id='.$row['id'].'">Editar</a>
+                                <a href="form.php?id=' . $row['id'] . '">Editar</a>
                             </td>
                             <td align="center">
-                                <a href="crud.php?opcao=excluir&id='.$row['id'].'">Excluir</a>
+                                <a href="crud.php?opcao=excluir&id=' . $row['id'] . '">Excluir</a>
                             </td>
                         </tr>
                     ';
                 }
-            ?>
-        </tbody>
+                ?>
+            </tbody>
     </table>
 </body>
+
 </html>

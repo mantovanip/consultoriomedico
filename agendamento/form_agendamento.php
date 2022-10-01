@@ -31,17 +31,17 @@
             <div>
                 <label for="data_agendamento">Data Agendamento:</label>
                 <br>
-                <input type="date" name="data_agendamento" id="data_agendamento">
+                <input type="text" name="data_agendamento" id="data_agendamento">
             </div>
             <div>
                 <label for="hrinicial">Hora Incial:</label>
                 <br>
-                <input type="time" name="hrinicial" id="hrinicial">
+                <input type="text" name="hrinicial" id="hrinicial">
             </div>
             <div>
                 <label for="hrfinal">Hora Final:</label>
                 <br>
-                <input type="time" name="hrfinal" id="hrfinal">
+                <input type="text" name="hrfinal" id="hrfinal">
             </div>
             <div>
                 <input class="sub" type="submit" value="Salvar" />

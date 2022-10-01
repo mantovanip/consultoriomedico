@@ -13,7 +13,7 @@
 <body>
     <form action="crud_medico.php" method="post">
         <fieldset>
-            <legend class="legend"> Cadasto de Médico</legend>
+            <legend class="legend"> Cadastro de Médico</legend>
             
             <div>
                 <label for="nome_medico">Nome Médico</label>
