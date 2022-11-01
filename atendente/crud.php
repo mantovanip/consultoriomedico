@@ -18,7 +18,7 @@
         exit;
     }
 }
-    $conexao    = new PDO('mysql:local=localhost;port=3306;dbname=consultoriomedico','root','');
+    $conexao    = new PDO('mysql:local=localhost;port=3308;dbname=consultoriomedico','root','');
     if($opcao == 'inserir'){
         $sql        = "INSERT INTO atendente (nome) VALUES ('{$nome}');";
         $mensagem   ='Salvo com Sucesso.<a href="#" onclick="history.back()">Voltar</a>';

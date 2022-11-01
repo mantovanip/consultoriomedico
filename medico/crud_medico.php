@@ -27,7 +27,7 @@ if (strlen($nome) <= 3){
     exit;
 }
 
-$conexao  = new PDO('mysql:local=localhost;port=3306;dbname=consultoriomedico','root','');
+$conexao  = new PDO('mysql:local=localhost;port=3308;dbname=consultoriomedico','root','');
 
 $sql      = "INSERT INTO medico (
     nome_medico,

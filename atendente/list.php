@@ -12,7 +12,7 @@
 <body>
 
     <table width="100%">
-        <caption>Lista de Atendentes</caption>
+        <h1>Lista de Atendentes</h1>
         <thead>
             <tr>
                 <th align="left">ID</td>
@@ -23,7 +23,7 @@
             <thead>
             <tbody>
                 <?php
-                $conexao    = new PDO('mysql:local=localhost;port=3306;dbname=consultoriomedico', 'root', '');
+                $conexao    = new PDO('mysql:local=localhost;port=3308;dbname=consultoriomedico', 'root', '');
                 $sql        = "SELECT * FROM atendente;";
                 $dataset    = $conexao->query($sql);
                 $resultset  = $dataset->fetchAll();

@@ -4,7 +4,7 @@ if (isset($_GET['id'])){
     $opcao   = 'atualizar';
 
 $id         = $_GET['id'];
-$conexao    = new PDO('mysql:local=localhost;port=3306;dbname=consultoriomedico', 'root', '');
+$conexao    = new PDO('mysql:local=localhost;port=3308;dbname=consultoriomedico', 'root', '');
 $sql        = "SELECT * FROM atendente WHERE id ={$id}";
 $dataset    = $conexao->query($sql);
 $resultset  = $dataset->fetch();

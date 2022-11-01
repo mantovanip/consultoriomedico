@@ -43,7 +43,7 @@ if($telefone1 ==''){
  }
 
 
-$conexao  = new PDO('mysql:local=localhost;port=3306;dbname=consultoriomedico','root','');
+$conexao  = new PDO('mysql:local=localhost;port=3308;dbname=consultoriomedico','root','');
 
 $sql        = "INSERT INTO paciente (nome_paciente,endereco,bairro,cep,cidade,estado,email,telefone1,telefone2,cpf,rg,genero) VALUES 
 ('{$nome}','{$endereco}','{$bairro}','{$cep}','{$cidade}','{$estado}','{$email}','{$telefone1}','{$telefone2}','{$cpf}','{$rg}','{$genero}');";
