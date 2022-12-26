@@ -9,7 +9,7 @@ $sql        = "SELECT * FROM atendente WHERE id ={$id}";
 $dataset    = $conexao->query($sql);
 $resultset  = $dataset->fetch();
 $id         = $resultset['id'];
-$nome       =$resultset['nome'];
+$nome       = $resultset['nome'];
 }else{
     $id     ='';
     $opcao  ='inserir';

@@ -37,7 +37,7 @@
                                 <a href="form.php?id=' . $row['id'] . '">Editar</a>
                             </td>
                             <td align="center">
-                                <a href="crud.php?opcao=excluir&id=' . $row['id'] . '">Excluir</a>
+                                <a href="crud.php?opcao=exlcuir&id=' . $row['id'] . '">Excluir</a>
                             </td>
                         </tr>
                     ';
